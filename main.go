@@ -77,7 +77,7 @@ func ensureNewlines(s string) string {
 
 func newMessage(c Config) Message {
 	msg := Message{
-		Context:    "https://schema.org/extension",
+		Context:    "https://schema.org/extensions",
 		Type:       "MessageCard",
 		ThemeColor: selectValue(c.ThemeColor, c.ThemeColorOnError),
 		Title:      selectValue(c.Title, c.TitleOnError),
